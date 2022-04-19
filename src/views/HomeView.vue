@@ -7,7 +7,7 @@
         <b-col
           ><b-form-input
             v-model="ROSIP"
-            placeholder="Enter ROS IP"
+            placeholder="Enter ROS IP server"
           ></b-form-input
         ></b-col>
         <b-col
