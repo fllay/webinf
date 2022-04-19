@@ -9,7 +9,7 @@
     "electron:serve": "vue-cli-service electron:serve",
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps",
-    "build": "electron-builder --mac --windows --linux",
+    "build": "electron-builder --mac",
     "release:release": "electron-builder --mac --windows --linux --publish always"
   },
   "main": "background.js",
