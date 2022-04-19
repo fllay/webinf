@@ -2,14 +2,9 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/navigation">Navigation</router-link> |
-      <router-link to="/editmap">Edit map</router-link> |
-      <router-link to="/blockly">Blockly</router-link> |
+      <router-link to="/about">About</router-link>
     </nav>
-    <!--<router-view />-->
-    <keep-alive>
-      <router-view></router-view>
-    </keep-alive>
+    <router-view/>
   </div>
 </template>
 

@@ -6,19 +6,32 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/",
+    name: "home",
+    component: HomeView,
   },
   {
-    path: '/about',
-    name: 'about',
+    path: "/editmap",
+    name: "Editmap",
+    component: () =>
+      import(/* webpackChunkName: "editmap" */ "../views/EditMapView.vue"),
+  },
+  {
+    path: "/blockly",
+    name: "Blockly",
+    component: () =>
+      import(/* webpackChunkName: "blockly" */ "../views/BlocklyView.vue"),
+  },
+  {
+    path: "/navigation",
+    name: "Navigation",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
-]
+    component: () =>
+      import(/* webpackChunkName: "navigation" */ "../views/NavigationView.vue"),
+  },
+];
 
 const router = new VueRouter({
   mode: 'history',
